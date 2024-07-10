@@ -4,45 +4,6 @@
 
 Este proyecto es una API RESTful construida con Spring Boot. La API permite gestionar fabricantes y productos.
 
-## **Estructura del Proyecto**
-
-La estructura principal del proyecto es la siguiente:
-
-SpringBootRest/
-├── .mvn/
-├── src/
-│ ├── main/
-│ │ └── java/
-│ │ └── com/
-│ │ └── aplicacion/
-│ │ └── rest/
-│ │ ├── controller/
-│ │ │ ├── MakerController.java
-│ │ │ ├── ProductController.java
-│ │ ├── dto/
-│ │ │ ├── MakerDTO.java
-│ │ │ ├── ProductDTO.java
-│ │ ├── entities/
-│ │ │ ├── Maker.java
-│ │ │ ├── Product.java
-│ │ ├── persistence/
-│ │ │ ├── impl/
-│ │ │ │ ├── MakerDAOImpl.java
-│ │ │ │ ├── ProductDAOImpl.java
-│ │ │ ├── IMakerDAO.java
-│ │ │ ├── IProductDAO.java
-│ │ ├── repository/
-│ │ │ ├── MakerRepository.java
-│ │ │ ├── ProductRepository.java
-│ │ ├── service/
-│ │ │ ├── impl/
-│ │ │ │ ├── MakerServiceImpl.java
-│ │ │ │ ├── ProductServiceImpl.java
-│ │ │ ├── IMakerService.java
-│ │ │ ├── IProductService.java
-│ │ ├── SpringBootRestApplication.java
-├── pom.xml
-└── ...
 
 ### **Descripción de Directorios y Archivos**
 
@@ -61,19 +22,6 @@ SpringBootRest/
 - JDK 11 o superior.
 - Maven 3.6.3 o superior.
 - MySQL (o cualquier otra base de datos relacional que prefieras).
-
-### **Configuración de la Base de Datos**
-
-Crea una base de datos en MySQL llamada 'rest_api_db' y actualiza las credenciales en application.properties:
-
-spring.datasource.url=jdbc:mysql://localhost:3306/rest_api_db
-spring.datasource.username=root
-spring.datasource.password=emer123
-
-spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
-spring.jpa.hibernate.ddl-auto=create-drop
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
 
 ## **Instalación**
 - **Clona el repositorio**: git clone https://github.com/tu_usuario/springbootrest.git
